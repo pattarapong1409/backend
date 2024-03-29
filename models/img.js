@@ -29,7 +29,7 @@ module.exports = class Image {
     return db.execute('SELECT * , image_url, account.name as name, points FROM images INNER JOIN account on images.aid = account.aid WHERE images.aid = ?', [aid]);
   }
 
-  static addImage(image_url, fashmash_id) {
-    return db.execute('INSERT INTO images (image_url, aid) VALUES (?, ?)', [image_url, fashmash_id]);
+  static upload(image_url, aid) {
+    return db.execute('INSERT INTO images (image_url, aid) VALUES (?, ?)', [image_url, aid]);
   }
 };

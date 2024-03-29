@@ -13,6 +13,6 @@ router.get('/top-ten', imgsController.fetchTopTen);
 router.get('/top-ten-user', imgsController.fetchTopTenUser);
 router.get('/find/:id', imgsController.onlyone);
 
-router.post('/add-image', imgsController.upload);
+router.post('/upload', imgsController.upload);
 
 module.exports = router;

@@ -84,10 +84,10 @@ exports.onlyone = async (req, res, next) => {
 //   };
 
 exports.upload = async (req, res, next) => {
-    const { image_url, fashmash_id }  = req.body;
+    const { image_url, aid }  = req.body;
     
     try {
-        const result = await Image.addImage(image_url, fashmash_id); 
+        const result = await Image.upload(image_url, aid); 
         res.status(200).json({ message: 'Image successfully added' });
     } catch (error) {
         console.error('Error adding image:', error);
