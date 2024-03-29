@@ -1,0 +1,11 @@
+{
+    "firebaseConfig" : {
+        "apiKey": "AIzaSyBsxN7S9jFnaB9GM8QGb6PwFEMCHPhxV_w",
+        "authDomain": "final-project-915f0.firebaseapp.com",
+        "projectId": "final-project-915f0",
+        "storageBucket": "final-project-915f0.appspot.com",
+        "messagingSenderId": "775900213188",
+        "appId": "1:775900213188:web:e3e4d9ff3e9e1b4da9be91",
+        "measurementId": "G-YWEFRHNX73"
+      }
+}
